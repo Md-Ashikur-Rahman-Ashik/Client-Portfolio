@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <Header />
@@ -9,4 +9,4 @@ export const App = () => {
   );
 };
 
-// export default App
+export default App
