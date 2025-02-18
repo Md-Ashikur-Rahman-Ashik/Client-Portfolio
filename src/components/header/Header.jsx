@@ -1,7 +1,11 @@
+import { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  // Toggle Menu
+  const [Toggle, showMenu] = useState(false);
+
   return (
     <header className="header">
       <nav className="nav container">
@@ -9,7 +13,7 @@ const Header = () => {
           Saiful
         </Link>
 
-        <div className="nav__menu">
+        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             {/* First list item */}
             <li className="nav__item">
