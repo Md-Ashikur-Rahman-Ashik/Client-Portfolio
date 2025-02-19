@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   // Toggle Menu
@@ -9,9 +8,9 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <Link to={"/"} className="nav__logo">
+        <a href={"#home"} className="nav__logo">
           Saiful
-        </Link>
+        </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
